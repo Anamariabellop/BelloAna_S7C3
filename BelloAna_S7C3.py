@@ -121,6 +121,11 @@ plt.ylabel("Amplitud")
 plt.title("Resorte")
 plt.savefig("Resorte.pdf")
 
+plt.figure()
+plt.plot(paraseleccion, color='darkslategrey', label="verosimilitud")
+plt.title("Likelihood")
+plt.savefig("Lh.pdf")
+
 # 3) SABIENDO QUE omega=np.sqrt(k/m), IMPRIMA UN MENSAJE DONDE EXPLIQUE SI PUEDE O NO DETERMINAR k Y m DE MANERA INDIVIDUAL USANDO EL METODO ANTERIOR. JUSTIFIQUE BIEN SU RESPUESTA (PUEDE ADEMAS HACER PRUEBAS CON EL CODIGO PARA RESPONDER ESTA PREGUNTA).
 print("  ")
 print(" Si omega es la raiz de k/m se podria determinar individualmente volviendo a realizar el metodo de estimacion bayesiana a traves de los resultados obtenidos anteriormente pero en este caso, se debería estimar las variables k y m comparadas con las k y m que se obtengan con la funcion inicial(despeje de ecuacion), siempre y cuando se obtengan condiciones iniciales o valores iniciales de k y m.")
